@@ -6,7 +6,7 @@ This collection of files enables you to create a Linux cursor theme out of an SV
 
 Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
 
-Gerhard Großmann <postfach2b@web.de>, April 2018
+Gerhard Großmann (<postfach2b@web.de>), April 2018
 
 
 ## Presettings
