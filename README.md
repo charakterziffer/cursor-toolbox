@@ -4,12 +4,12 @@ This collection of files enables you to create a Linux cursor theme out of an SV
 
 ![All cursors of my theme, in white and black](assets/preview.png)
 
-Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip). For installing instructions see [step 3](#install) in this *README* file.
+Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
 
 Gerhard Großmann <postfach2b@web.de>, April 2018
 
 
-## Presetting
+## Presettings
 
 Clone or download the files of this repository to your local machine. If downloaded via the green github button top right then unpack the zip file. To render the PNGs the vector editing software **Inkskape** is used. For combining the PNGs to X11 cursor files you’ll need the command line tool **xcursorgen**.
 
