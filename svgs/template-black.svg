@@ -76,11 +76,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="338.5"
-     inkscape:cy="232.42005"
+     inkscape:cx="336.5"
+     inkscape:cy="254.05691"
      inkscape:document-units="px"
      inkscape:current-layer="g4717"
-     showgrid="false"
+     showgrid="true"
      inkscape:object-paths="false"
      inkscape:object-nodes="true"
      units="px"
@@ -1166,7 +1166,7 @@
          id="g5531"
          transform="translate(0,1)">
         <path
-           d="m 57.5,215 c 0,2 2.5,3.5 3.5,3.5 l 9,0 c 2,0 2.5,-3.5 2.5,-5.5 l 0,-7 c 0,-2 -0.75,-2.5 -1.75,-2.5 l -1.25,0 c 0,-1 -0.5,-1 -1.5,-1 l -1.5,0 c 0,-1 -0.5,-1 -1.5,-1 -1,0 -1.5,0 -1.5,1 l -2,0 c -1,0 -1,0.5286 -1,1 l 0,4 -2,0 c 0,0 -1,1 -1,2 z"
+           d="m 57.5,214 c 0,2 2.5,3.5 3.5,3.5 l 9,0 c 2,0 2.5,-2.5 2.5,-4.5 l 0,-7 c 0,-2 -0.75,-2.5 -1.75,-2.5 l -1.25,0 c 0,-1 -0.5,-1 -1.5,-1 l -1.5,0 c 0,-1 -0.5,-1 -1.5,-1 -1,0 -1.5,0 -1.5,1 l -2,0 c -1,0 -1,0.5286 -1,1 l 0,4 -2,0 c 0,0 -1,1 -1,2 z"
            id="path4727-9-8"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="sssssscscscscccss" />
@@ -1189,7 +1189,7 @@
            sodipodi:nodetypes="cc"
            style="stroke-linecap:round" />
         <path
-           d="m 60.5,207.5 0,5.5"
+           d="m 60.5,207.5 0,4.5"
            id="path4729-5-9-3"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc"
