@@ -115,4 +115,4 @@ In the *assets* folder you’ll find a list of the cursors and equivalents, my o
 
 To analyse which cursor is displayed I recommend using the theme Dummy X11 Cursors. It can be found at https://www.gnome-look.org/content/show.php?content=128170
 
-If you have further questions, ideas or need some help with my cursor toolbox I’m more than happy to give a hand. Please file an issue here at Github or simply mail me at <postfach2b@web.de> and we’ll figure that out 😀.
+If you have further questions, ideas or need some help with my cursor toolbox I’m more than happy to give a hand. Please file an issue here at GitHub or simply mail me at <postfach2b@web.de> and we’ll figure that out 😀.
