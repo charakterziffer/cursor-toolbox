@@ -4,7 +4,7 @@ This collection of files enables you to create a Linux cursor theme out of an SV
 
 ![All cursors of my theme, in white and black](assets/preview.png)
 
-Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
+Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For Windows I made a trimmed-down version: [cz-Viator WIN](assets/cz-viator-WIN.zip?raw=true) and [cz-Viator (Black) WIN](assets/cz-viator-black-WIN.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
 
 Gerhard Großmann (<postfach2b@web.de>), April 2018
 
@@ -92,7 +92,9 @@ I’ve yet no idea how to do this 🤷. If somebody could give me an advise I’
 
 <a name="install"></a>
 
-## 3 Installing and Using the Cursor Theme (Linux)
+## 3 Installing and Using the Cursor Theme
+
+### Instructions for Linux
 
 To install the theme for a single user copy the theme folder into the hidden folder *.icons* in your home directory – if neccessary create this folder. You can do this with the terminal, too. Replace the *[theme folder]* with the name of the generated folder from step 2.3.
 
@@ -107,6 +109,16 @@ Now you have to set your cursor theme as the prefered one. Depending on your Lin
 On KDE Plasma go to Computer > System Settings > Workspace Appearence > Cursor Theme (or similar).
 
 For MATE search at System > Settings > Appearence > Theme …, XFC should be Settings > Mouse and Touchpad > Cursor Theme. There are other possibilities but I can’t list all of them here.
+
+### Instructions for Windows
+
+Unzip the downloaded folder and open in. There you find a file *INSTALL.inf*. Right click it and choose “Install”. It copys the cursor folder to *C:\Windows\Cursors\* and registers the cursors as a new available scheme.
+
+After that you can select the cz-Viator theme. For this right click on your desktop, pick “Customize” in the context menu. In the new window choose Designs, then Mouse cursor. Under Schemes you find “cz-Viator {Black}” in the drop down menu. Select it and confirm your preference with *OK*.
+
+**The Windows cursor theme has some flaws:** My theme has shadows by default, so you can’t use the Shadows setting. I only have produced the default size. If you need your cursors bigger, contact me and I see what I can do.
+
+Some cursors can’t be set without overwriting the default cursor files, some even aren’t used on Windows. Because of that, cz-Viator for Windows only contains the 15 cursors arrow, help, pointing-hand, progress (work), wait (busy), crosshair, text, pen, move, not-allowed, resize (horizontal, vertical, 2 diagonals) and arrow-up. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
 
 
 ## 4 Enjoying the Theme
