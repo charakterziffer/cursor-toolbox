@@ -112,7 +112,7 @@ For MATE search at System > Settings > Appearence > Theme …, XFC should be Set
 
 ### Instructions for Windows
 
-Unzip the downloaded folder and open in. There you find a file *INSTALL.inf*. Right click it and choose “Install”. It copys the cursor folder to *C:\Windows\Cursors\* and registers the cursors as a new available scheme.
+Unzip the downloaded folder and open in. There you find a file *INSTALL.inf*. Right click it and choose “Install”. It copys the cursor folder to `C:\Windows\Cursors\` and registers the cursors as a new available scheme.
 
 After that you can select the cz-Viator theme. For this right click on your desktop, pick “Customize” in the context menu. In the new window choose Designs, then Mouse cursor. Under Schemes you find “cz-Viator {Black}” in the drop down menu. Select it and confirm your preference with *OK*.
 
