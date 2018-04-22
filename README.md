@@ -84,11 +84,13 @@ To name your theme open *make.sh* with your prefered text editor. Fill in your o
 
     ./make.sh
 
-Your finished cursor theme is in the new folder with you given name. (For the next steps I’ll call that “theme folder”).
+Your finished cursor theme is in the new folder with your given name. (For the next steps I’ll call that “theme folder”).
 
 ### *2.4 (optional) Recreating Your Cursor Theme for Windows and Mac*
 
-I’ve yet no idea how to do this 🤷. If somebody could give me an advise I’d be glad.
+Keefer Rourke gave me a hint how to convert PNG images to Windows cursors. For his capitaine theme he used the free Windows software [Real World Cursor Editor](http://www.rw-designer.com/cursor-maker). A fair warning: Using that Editor is in no way as fast and easy as combining the PNGs with a simple shell command.
+
+Furthermore the Windows theme seem to can contain only a subset of the cursors, namely: left_ptr, help, pointing_hand, text, crosshair, not-allowed, pencil, move, up-arrow, ns-resize, ew-resize, nesw-resize, nwse-resize, progress and wait. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
 
 <a name="install"></a>
 
@@ -116,9 +118,7 @@ Unzip the downloaded folder and open in. There you find a file *INSTALL.inf*. Ri
 
 After that you can select the cz-Viator theme. For this right click on your desktop, pick “Customize” in the context menu. In the new window choose Designs, then Mouse cursor. Under Schemes you find “cz-Viator {Black}” in the drop down menu. Select it and confirm your preference with *OK*.
 
-**The Windows cursor theme has some flaws:** My theme has shadows by default, so you can’t use the Shadows setting. I only have produced the default size. If you need your cursors bigger, contact me and I see what I can do.
-
-Some cursors can’t be set without overwriting the default cursor files, some even aren’t used on Windows. Because of that, cz-Viator for Windows only contains the 15 cursors arrow, help, pointing-hand, progress (work), wait (busy), crosshair, text, pen, move, not-allowed, resize (horizontal, vertical, 2 diagonals) and arrow-up. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
+**The Windows cursor theme has some flaws:** My theme has shadows by default, so you can’t use the Shadows setting. I only have produced the default size. If you need your cursors bigger, contact me and I see what I can do. Some cursors can’t (?) be set on Windows. Because of that, cz-Viator for Windows only contains the 15 cursors listed at step 2.4.
 
 
 ## 4 Enjoying the Theme
