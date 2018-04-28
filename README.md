@@ -88,7 +88,9 @@ Your finished cursor theme is in the new folder with your given name. (For the n
 
 ### *2.4 (optional) Recreating Your Cursor Theme for Windows and Mac*
 
-Keefer Rourke gave me a hint how to convert PNG images to Windows cursors. For his capitaine theme he used the free Windows software [Real World Cursor Editor](http://www.rw-designer.com/cursor-maker). A fair warning: Using that Editor is in no way as fast and easy as combining the PNGs with a simple shell command.
+If somebody knows how to do that for Mac, please let me know.
+
+**For Windows:** Keefer Rourke gave me a hint how to convert PNG images to Windows cursors. For his capitaine theme he used the free Windows software [Real World Cursor Editor](http://www.rw-designer.com/cursor-maker). A fair warning: Using that Editor is in no way as fast and easy as combining the PNGs with a simple shell command.
 
 Furthermore the Windows theme seem to can contain only a subset of the cursors, namely: left_ptr, help, pointing_hand, text, crosshair, not-allowed, pencil, move, up-arrow, ns-resize, ew-resize, nesw-resize, nwse-resize, progress and wait. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
 
