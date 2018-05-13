@@ -94,9 +94,8 @@ If somebody knows how to do that for Mac, please let me know.
 
 Furthermore the Windows theme seem to can contain only a subset of the cursors, namely: left_ptr, help, pointing_hand, text, crosshair, not-allowed, pencil, move, up-arrow, ns-resize, ew-resize, nesw-resize, nwse-resize, progress and wait. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
 
-<a name="install"></a>
 
-## 3 Installing and Using the Cursor Theme
+<h2 id="install">3 Installing and Using the Cursor Theme</h2>
 
 ### Instructions for Linux
 
