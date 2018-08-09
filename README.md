@@ -92,20 +92,20 @@ If somebody knows how to do that for Mac, please let me know.
 
 **For Windows:** Keefer Rourke gave me a hint how to convert PNG images to Windows cursors. For his capitaine theme he used the free Windows software [Real World Cursor Editor](http://www.rw-designer.com/cursor-maker). A fair warning: Using that Editor is in no way as fast and easy as combining the PNGs with a simple shell command.
 
-Furthermore the Windows theme seem to can contain only a subset of the cursors, namely: left_ptr, help, pointing_hand, text, crosshair, not-allowed, pencil, move, up-arrow, ns-resize, ew-resize, nesw-resize, nwse-resize, progress and wait. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
+Furthermore the Windows theme apparently can contain only a subset of the cursors, namely: left_ptr, help, pointing_hand, text, crosshair, not-allowed, pencil, move, up-arrow, ns-resize, ew-resize, nesw-resize, nwse-resize, progress and wait. In all other cases unfortunately the default cursors are displayed (e. g. zoom, grab, alias, col-resize).
 
 
 <h2 id="install">3 Installing and Using the Cursor Theme</h2>
 
 ### Instructions for Linux
 
-To install the theme for a single user copy the theme folder into the hidden folder *.icons* in your home directory – if neccessary create this folder. You can do this with the terminal, too. Replace the *[theme folder]* with the name of the generated folder from step 2.3.
+To install the theme for a single user copy the theme folder into the hidden folder *.icons* in your home directory – if neccessary create this folder. You can do this with the terminal, too. Replace the *[theme-folder]* with the name of the generated folder from step 2.3.
 
-    cp -r [theme folder] ~/.icons/[theme folder]
+    cp -r [theme-folder] ~/.icons/[theme-folder]
 
 To install the cursor theme system-wide, copy your folder to /usr/share/icons. You’ll need to run the command as the system administrator, so you’ll be prompted for your system password:
 
-    sudo cp -r [theme folder] usr/share/icons/[theme folder]
+    sudo cp -r [theme-folder] usr/share/icons/[theme-folder]
 
 Now you have to set your cursor theme as the prefered one. Depending on your Linux distribution use the Gnome Tweak Tool or Unity Tweak Tool (there: Theme Settings).
 
