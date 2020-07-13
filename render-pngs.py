@@ -65,14 +65,14 @@ class SVGRect:
 		dbg("New SVGRect: (%s)" % name)
 
 	def renderFromSVG(self, svgFName, sliceFName):
-		rc = os.system('inkscape --without-gui --export-id="%s" --export-png="pngs/24/%s" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --without-gui --export-id="%s" --export-filename="pngs/24/%s" --export-type=png "%s"' % (self.name, sliceFName, svgFName))
 		if rc > 0:
 			fatalError('ABORTING: Inkscape failed to render the slice.')
 
 # Not only render 24x4 PNGs, but also 32x32 and 48x48
 
-		rc = os.system('inkscape -w 32 -h 32 --without-gui --export-id="%s" --export-png="pngs/32/%s" "%s"' % (self.name, sliceFName, svgFName))
-		rc = os.system('inkscape -w 48 -h 48 --without-gui --export-id="%s" --export-png="pngs/48/%s" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 32 -h 32 --without-gui --export-id="%s" --export-filename="pngs/32/%s" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 48 -h 48 --without-gui --export-id="%s" --export-filename="pngs/48/%s" "%s"' % (self.name, sliceFName, svgFName))
 
 class SVGHandler(handler.ContentHandler):
 	"""Base class for SVG parsers"""
