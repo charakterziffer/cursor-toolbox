@@ -59,7 +59,7 @@ Or, if you prefer the black-theme:
 
     ./render-pngs.py svgs/template-black.svg
 
-This creates the folder *pngs* with all the images – it may take some time. If you want other sizes than 24×24, 32×32 and 48×48 then edit the lines 68, 74 and 75 in *render-pngs.py* before.
+This creates the folder *pngs* with all the images – **it may take some time!** You can see that the command is working when the folder “pngs” fills itself with more and more png files. If you want other sizes than 24×24, 32×32 and 48×48 then edit the lines 68, 74 and 75 in *render-pngs.py* before.
 
 ### *2.2 (optional) Different Spinners*
 
