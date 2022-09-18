@@ -26,6 +26,7 @@ optParser = OptionParser()
 optParser.add_option('-d', '--debug', action='store_true', dest='debug', help='Enable extra debugging info.')
 optParser.add_option('-t', '--test', action='store_true', dest='testing', help='Test mode: leave temporary files for examination.')
 optParser.add_option('-p', '--sliceprefix', action='store', dest='sliceprefix', help='Specifies the prefix to use for individual slice filenames.')
+optParser.add_option('-s', '--specify', action='store', dest='specific', help='Specify which slices to update images for. Separate each slice with a space.')
 
 from xml.sax import saxutils, make_parser, SAXParseException, handler
 from xml.sax.handler import feature_namespaces
@@ -248,6 +249,14 @@ if __name__ == '__main__':
 		dbg("Parsing successful.")
 
 	#svgLayerHandler.generateXHTMLPage()
+
+	if options.specific:
+		rects_name = options.specific.split()
+		# Only gets slices that matches a given name.
+		rects = [x for x in svgLayerHandler.svg_rects if x.name in rects_name]
+	else:
+        # Otherwise all slices.
+		rects = svgLayerHandler.svg_rects
 
 	# loop through each slice rectangle, and render a PNG image for it
 	for rect in svgLayerHandler.svg_rects:
