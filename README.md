@@ -105,7 +105,7 @@ To install the theme for a single user copy the theme folder into the hidden fol
 
 To install the cursor theme system-wide, copy your folder to /usr/share/icons. You’ll need to run the command as the system administrator, so you’ll be prompted for your system password:
 
-    sudo cp -r [theme-folder] usr/share/icons/[theme-folder]
+    sudo cp -r [theme-folder] /usr/share/icons/[theme-folder]
 
 Now you have to set your cursor theme as the prefered one. Depending on your Linux distribution use the Gnome Tweak Tool or Unity Tweak Tool (there: Theme Settings).
 
