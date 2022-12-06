@@ -61,6 +61,13 @@ Or, if you prefer the black-theme:
 
 This creates the folder *pngs* with all the images – **it may take some time!** You can see that the command is working when the folder “pngs” fills itself with more and more png files. If you want other sizes than 24×24, 32×32 and 48×48 then edit the lines 68, 74 and 75 in *render-pngs.py* before.
 
+To render only some specific cursors and not the whole set there’s the option `--specify`. For example if you already made png images for all cursors but then changed one or two of them you may only re-render those.
+
+     ./render-pngs.py svgs/template.svg --specify pointing_hand help pirate
+
+That’s way faster than rendering *all* pngs again. The names of the cursors correspond to their rectangle IDs on the *slices* layer. When specifying more than one ID please separate each item by a space.
+
+
 ### *2.2 (optional) Different Spinners*
 
 The animated cursor of my theme cz-Viator is a rotating windmill. However I’ve created some alternative designs (there are black variants, too):
