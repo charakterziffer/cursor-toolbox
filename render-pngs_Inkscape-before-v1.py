@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 #
 # SVGSlice
 #
@@ -23,9 +23,10 @@ Please remember to HIDE the slices layer before exporting, so that the rectangle
 from optparse import OptionParser
 
 optParser = OptionParser()
-optParser.add_option('-d','--debug',action='store_true',dest='debug',help='Enable extra debugging info.')
-optParser.add_option('-t','--test',action='store_true',dest='testing',help='Test mode: leave temporary files for examination.')
-optParser.add_option('-p','--sliceprefix',action='store',dest='sliceprefix',help='Specifies the prefix to use for individual slice filenames.')
+optParser.add_option('-d', '--debug', action='store_true', dest='debug', help='Enable extra debugging info.')
+optParser.add_option('-t', '--test', action='store_true', dest='testing', help='Test mode: leave temporary files for examination.')
+optParser.add_option('-p', '--sliceprefix', action='store', dest='sliceprefix', help='Specifies the prefix to use for individual slice filenames.')
+optParser.add_option('-s', '--specify', action='store', dest='specific', help='Specify which slices to update images for. Separate each slice with a space.')
 
 from xml.sax import saxutils, make_parser, SAXParseException, handler
 from xml.sax.handler import feature_namespaces
@@ -77,12 +78,12 @@ class SVGRect:
 class SVGHandler(handler.ContentHandler):
 	"""Base class for SVG parsers"""
 	def __init__(self):
-		self.pageBounds = SVGRect(0,0,0,0)
+		self.pageBounds = SVGRect(0, 0, 0, 0)
 
 	def isFloat(self, stringVal):
 		try:
 			return (float(stringVal), True)[1]
-		except (ValueError, TypeError), e:
+		except (ValueError, TypeError) as e:
 			return False
 
 	def parseCoordinates(self, val):
@@ -160,7 +161,7 @@ class SVGLayerHandler(SVGHandler):
 			x2 = self.parseCoordinates(attrs['width']) + x1
 			y2 = self.parseCoordinates(attrs['height']) + y1
 			name = attrs['id']
-			rect = SVGRect(x1,y1, x2,y2, name)
+			rect = SVGRect(x1, y1, x2, y2, name)
 			self.add(rect)
 
 	def startElement(self, name, attrs):
@@ -224,7 +225,7 @@ if __name__ == '__main__':
 		sliceprefix = ''
 
 	# initialise results before actually attempting to parse the SVG file
-	svgBounds = SVGRect(0,0,0,0)
+	svgBounds = SVGRect(0, 0, 0, 0)
 	rectList = []
 
 	# Try to parse the svg file
@@ -236,7 +237,7 @@ if __name__ == '__main__':
 	xmlParser.setContentHandler(svgLayerHandler)
 	try:
 		xmlParser.parse(svgFilename)
-	except SAXParseException, e:
+	except SAXParseException as e:
 		fatalError("Error parsing SVG file '%s': line %d,col %d: %s.  If you're seeing this within inkscape, it probably indicates a bug that should be reported." % (svgfile, e.getLineNumber(), e.getColumnNumber(), e.getMessage()))
 
 	# verify that the svg file actually contained some rectangles.
@@ -248,6 +249,14 @@ if __name__ == '__main__':
 		dbg("Parsing successful.")
 
 	#svgLayerHandler.generateXHTMLPage()
+
+	if options.specific:
+		rects_name = options.specific.split()
+		# Only gets slices that matches a given name.
+		rects = [x for x in svgLayerHandler.svg_rects if x.name in rects_name]
+	else:
+        # Otherwise all slices.
+		rects = svgLayerHandler.svg_rects
 
 	# loop through each slice rectangle, and render a PNG image for it
 	for rect in svgLayerHandler.svg_rects:
