@@ -11,7 +11,7 @@ Gerhard Großmann (<postfach2b@web.de>), April 2018
 
 ## Presettings
 
-Clone or download the files of this repository to your local machine. If downloaded via the green github button top right then unpack the zip file. To render the PNGs the vector editing software **Inkskape** is used. For combining the PNGs to X11 cursor files you’ll need the command line tool **xcursorgen**.
+Clone or download the files of this repository to your local machine. If downloaded via the green github button top right then unpack the zip file. To render the PNGs the vector editing software **Inkskape** is used. For combining the PNGs to X11 cursor files you’ll need the command line tool **xcursorgen** (part of the package **x11-tools** on Debian/Ubuntu).
 
 
 ## 1 Designing Your Own Cursors
