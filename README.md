@@ -4,7 +4,7 @@ This collection of files enables you to create a Linux cursor theme out of an SV
 
 ![All cursors of my theme, in white and black](assets/preview.png)
 
-Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For Windows I made a trimmed-down version: [cz-Viator WIN](assets/cz-viator-WIN.zip?raw=true), [cz-Viator (Black) WIN](assets/cz-viator-black-WIN.zip?raw=true) and [cz-Viator (Black, no shadows) WIN](assets/cz-viator-black-noShadows-WIN.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
+Maybe you don’t want to build your own theme and just download mine? I’ve prepared the [white cz-Viator](assets/cz-viator.zip?raw=true) and the variant [cz-Viator (Black)](assets/cz-viator-black.zip?raw=true). For Windows I made a trimmed-down version: [cz-Viator WIN](assets/cz-viator-WIN.zip?raw=true), [cz-Viator (Black) WIN](assets/cz-viator-black-WIN.zip?raw=true) and [cz-Viator (Black, no shadows) WIN](assets/cz-Viator-black-noShadows-WIN.zip?raw=true). For installing instructions see [step 3](#install) in this *README* file.
 
 Gerhard Großmann (<postfach2b@web.de>), December 2023
 
